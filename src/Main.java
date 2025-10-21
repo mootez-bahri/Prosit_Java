@@ -2,14 +2,27 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //Instruction 5
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Animal lion= new Animal();
+        lion.name = "simba";
+        lion.family = "lion";
+        lion.age = 30;
+        lion.isMammal = true;
+
+        Zoo zoo = new Zoo();
+        zoo.name = "belvedere";
+        zoo.city = "Tunis";
+        zoo.nbrAnimaux = 3;
+        zoo.nbrCages = 1;
+        zoo.animaux = new Animal[zoo.nbrAnimaux];
+
+        //Instruction  6 / 7
+
+        Animal lion1= new Animal("simba","lion",45,true);
+        Zoo zoo1= new Zoo("Ishkel","ben arous", 3,1);
+        zoo1.displayZoo();
+
+
     }
-}
+    }
