@@ -1,9 +1,11 @@
+package tn.esprit.getinzoo.entities;
+
 public class Zoo {
-    Animal[] animaux;
-    String name;
-    String city;
-    int nbrCages;
-    int nbrAnimaux;
+    private Animal[] animaux;
+    private String name;
+    private String city;
+    private int nbrCages;
+    private int nbrAnimaux;
 
     public Zoo(){}
     public Zoo(String name, String city, int nbrCages){
@@ -14,8 +16,8 @@ public class Zoo {
         this.animaux = new Animal[nbrCages];
     }
     public void displayZoo() {
-        System.out.println("Zoo name: " + this.name +
-                " / Zoo city: " + this.city +
+        System.out.println("Entity.Zoo name: " + this.name +
+                " / Entity.Zoo city: " + this.city +
                 " / Number of cages: " + this.nbrCages +
                 " / Number of animals: " + this.nbrAnimaux);
     }
@@ -23,24 +25,24 @@ public class Zoo {
 
     @Override
     public String toString() {
-        return "Zoo name: " + name +
+        return "Entity.Zoo name: " + name +
                 ", city: " + city +
                 ", number of cages: " + nbrCages +
                 ", number of animals: " + nbrAnimaux;
     }
 
     public boolean addAnimal (Animal animal){
-        if (this.nbrAnimaux >= this.nbrCages){
+        if (this.isZooFull()){
             System.out.println("Le zoo est plein ! Impossible d'ajouter l'animal.");
             return false;
         }
         if (this.searchAnimal(animal) != -1 ) {
-            System.out.println("Animal existe deja");
+            System.out.println("Entity.Animal existe deja");
             return false;
         }
         this.animaux[this.nbrAnimaux] = animal;
         nbrAnimaux++;
-        System.out.println("Animal ajouté avec succès ");
+        System.out.println("Entity.Animal ajouté avec succès ");
         return true;
     }
 
@@ -61,7 +63,7 @@ public class Zoo {
         }
         return -1;
     }
-    boolean removeAnimal(Animal animal){
+    public boolean removeAnimal(Animal animal){
         int index = searchAnimal(animal);
         if (index == -1) {
             System.out.println("animal a supprimer n existe pas");
@@ -83,6 +85,12 @@ public class Zoo {
             System.out.println("les deux zoo contiennnet meme nobmre d'animaux");
             return null;
         }
+    }
+    public boolean isZooFull() {
+        if  (this.nbrAnimaux == this.nbrCages) {
+            return true;
+        }
+        return false;
     }
 
 

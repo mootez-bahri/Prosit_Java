@@ -66,11 +66,11 @@ Prosit\_Java/
 
 ├── src/
 
-│   ├── Animal.java      # Classe représentant un animal
+│   ├── tn.esprit.getinzoo.entities.Animal.java      # Classe représentant un animal
 
-│   ├── Zoo.java         # Classe principale du zoo : ajout, recherche, suppression, comparaison
+│   ├── tn.esprit.getinzoo.entities.Zoo.java         # Classe principale du zoo : ajout, recherche, suppression, comparaison
 
-│   └── Main.java        # Classe principale contenant les tests
+│   └── main.main.java        # Classe principale contenant les tests
 
 │
 
