@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         //Instruction 5
 
-        Animal lion= new Animal();
+        /*Animal lion= new Animal();
         lion.name = "simba";
         lion.family = "lion";
         lion.age = 30;
@@ -20,12 +20,14 @@ public class Main {
         zoo.name = "belvedere";
         zoo.city = "Tunis";
         zoo.nbrCages = 3;
-        zoo.animaux = new Animal[zoo.nbrCages];
+        zoo.animaux = new Animal[zoo.nbrCages];*/
 
         //Instruction  6 / 7
-
+        Animal lion= new Animal("simba","lion",30,true );
         Animal lion1= new Animal("simba","lion",45,true);
         Animal lion2= new Animal("Ishkel","lion",45,true);
+
+        Zoo zoo= new Zoo("belvedere", "Tunis", 3);
         Zoo zoo1= new Zoo("Ishkel","ben arous", 3);
         zoo1.displayZoo();
 

@@ -7,6 +7,30 @@ public class Zoo {
     private int nbrCages;
     private int nbrAnimaux;
 
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public  String getCity() {
+        return city;
+    }
+    public void setCity(String city) {
+        this.city = city;
+    }
+    public int getNbrCages() {
+        return nbrCages;
+    }
+    public void setNbrCages(int nbrCages) {
+        this.nbrCages = nbrCages;
+    }
+    public int getNbrAnimaux() {
+        return nbrAnimaux;
+    }
+    public void setNbrAnimaux(int nbrAnimaux) {
+        this.nbrAnimaux = nbrAnimaux;
+    }
     public Zoo(){}
     public Zoo(String name, String city, int nbrCages){
         this.name = name;
@@ -57,7 +81,7 @@ public class Zoo {
             return -1;
         }
         for (int i = 0; i < this.nbrAnimaux; i++) {
-            if (this.animaux[i].name.equals(animal.name)) {
+            if (this.animaux[i].getName().equals(animal.getName())) {
                 return i;
             }
         }
@@ -69,7 +93,7 @@ public class Zoo {
             System.out.println("animal a supprimer n existe pas");
             return false;
         }
-        for (int i = index; i < nbrAnimaux; i++) {
+        for (int i = index; i < this.nbrAnimaux; i++) {
             this.animaux[i] = this.animaux[i + 1];
         }
         this.animaux[nbrAnimaux - 1] = null;
