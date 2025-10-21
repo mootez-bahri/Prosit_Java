@@ -2,13 +2,59 @@
 
 
 
-Ce projet a pour objectif d’appliquer les principes de la programmation orientée objet (POO) en Java.
+Ce projet poursuit le travail entamé dans le Prosit 2 et approfondit la programmation orientée objet (POO) en Java.
 
-Il consiste à modéliser un zoo contenant plusieurs animaux, en utilisant des classes, des constructeurs paramétrés et la redéfinition de la méthode toString() pour l’affichage des objets.
+L’objectif est d’enrichir l’application de gestion d’un zoo en ajoutant des méthodes fonctionnelles, de la recherche, de la suppression, et de la comparaison entre plusieurs zoos.
+
+Le projet illustre la manipulation de tableaux d’objets, la gestion de capacité maximale et l’utilisation de méthodes static.
 
 
 
-L’application permet de créer un zoo, d’y ajouter des animaux et d’afficher leurs informations de manière claire.
+🎯 Objectif principal
+
+
+
+Développer une application Java capable de :
+
+
+
+Ajouter, rechercher et supprimer des animaux dans un zoo.
+
+
+
+Gérer la capacité maximale du zoo (nombre de cages).
+
+
+
+Vérifier si un zoo est plein.
+
+
+
+Comparer deux zoos et déterminer celui qui contient le plus d’animaux.
+
+
+
+🧠 Compétences mises en œuvre
+
+
+
+Utilisation avancée des classes et objets.
+
+
+
+Manipulation de tableaux d’objets.
+
+
+
+Création de méthodes de gestion (ajout, recherche, suppression).
+
+
+
+Application du concept de constantes et de méthodes statiques.
+
+
+
+Structuration du code selon les principes de la POO.
 
 
 
@@ -20,35 +66,39 @@ Prosit\_Java/
 
 ├── src/
 
-│   ├── Animal.java      # Classe représentant un animal (nom, famille, âge, mammifère)
+│   ├── Animal.java      # Classe représentant un animal
 
-│   ├── Zoo.java         # Classe représentant le zoo (nom, ville, nb de cages, animaux)
+│   ├── Zoo.java         # Classe principale du zoo : ajout, recherche, suppression, comparaison
 
-│   └── Main.java        # Classe principale contenant la méthode main()
+│   └── Main.java        # Classe principale contenant les tests
 
 │
 
 ├── README.md            # Description du projet
 
-└── .gitignore           # Fichiers à ignorer par Git
+└── .gitignore
 
 
 
-🎯 Objectif
+📚 Résultat attendu
 
 
 
-Comprendre la création et la manipulation d’objets.
+Lors de l’exécution :
 
 
 
-Utiliser des constructeurs paramétrés.
+Les informations du zoo et des animaux sont affichées.
 
 
 
-Redéfinir toString() pour un affichage personnalisé.
+L’ajout, la recherche et la suppression d’animaux sont testés.
 
 
 
-Appliquer les bonnes pratiques de la POO en Java.
+Les messages indiquent si le zoo est plein, vide ou si un animal existe déjà.
+
+
+
+La comparaison entre deux zoos affiche celui qui contient le plus d’animaux.
 
