@@ -49,4 +49,13 @@ public class Zoo {
             nbrAnimaux--;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Zoo name: " + name +
+                ", city: " + city +
+                ", number of cages: " + nbrCages +
+                ", number of animals: " + nbrAnimaux;
+    }
+
 }

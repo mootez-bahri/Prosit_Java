@@ -24,5 +24,9 @@ public class Main {
         zoo1.displayZoo();
 
 
+        System.out.println(lion1.toString());
+        System.out.println(zoo1.toString());
+
+
     }
     }
